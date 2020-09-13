@@ -1,7 +1,7 @@
 # GolangOrnekler
 Go örnek kodlar
 
-##iletişim
+# iletişim
 Tüm platformlarda @ixakblt
 
 https://ixakblt.site
