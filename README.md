@@ -1,0 +1,2 @@
+# GolangOrnekler
+Go örnek kodlar
