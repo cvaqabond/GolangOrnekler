@@ -8,11 +8,11 @@ import (
 )
 
 func main() {
-	resp, _ := http.Get("https://ixakbulut.com")
-	alis, _ := ioutil.ReadAll(resp.Body)
-	re := regexp.MustCompile(`http([^"]*)`)
-	veri := re.FindAll(alis, -1)
-	for _, a := range veri {
+	resp, _ := http.Get("https://ixakbulut.com") //request attık
+	alis, _ := ioutil.ReadAll(resp.Body)         //veriyi okuduk
+	re := regexp.MustCompile(`http([^"]*)`)      //düzenli ifademizi oluşturduk
+	veri := re.FindAll(alis, -1)                 //ifade ile aramamızı yaptık 2. değer kaç döndü istediğimizdir biz hepsini almak için -1 dedik
+	for _, a := range veri {                     // döngü ile ekrana bastırdık
 		fmt.Println(string(a))
 	}
 
